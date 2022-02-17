@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import Searchbar from './Searshbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import ImageGalleryList from './ImageGalleryItem/ImageGalleryList';
-import {LoadMoreButton} from './Gallery.styled';
+import {LoadMoreButton} from './ImageFinder.styled';
 import Modal from './Modal/Modal';
 import Loader from './Loader/Loader.jsx';
 
@@ -76,19 +76,7 @@ useEffect(() => {
       
    fetchImages()
     }, [filter, page])
-    
 
-        
-    
-
-    // componentDidUpdate(prevPropes, prevState) {
-    //     if (prevState.filter !== this.state.filter) {
-    //         this.setState({ page: 1, images: [] })
-    //     }
-    //     if ((prevState.filter !== this.state.filter  && this.state.page === 1) || prevState.page !== this.state.page) {
-    //         this.fetchImages()
-    //         }
-    //     }
 
 
         return (
